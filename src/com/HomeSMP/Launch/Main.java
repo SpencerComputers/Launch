@@ -5,16 +5,17 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.sound;
 
 public class Main extends JavaPlugin {
-	
+
 	@Override
 	public void onEnable() {
 		// startup
 		// reloads
 		// plugin reloads
 	}
-	
+
 	@Override
 	public void onDisable() {
 		// shutdown
@@ -32,15 +33,17 @@ public class Main extends JavaPlugin {
 			if (args.length == 0) {
 				// /launch
 				player.sendMessage(ChatColor.GREEN + "Woosh!");
+				player.playSound(player.getLocation(), Sound.ENTITY_WITHER_HURT, 1f, 1f);
 				player.setVelocity(player.getLocation().getDirection().multiply(2).setY(2));
-				
+
 				return true;
 			}
-			
+
 			// /launch <num>
 			player.sendMessage(ChatColor.GREEN + "Woosh!");
+			player.playSound(player.getLocation(), Sound.ENTITY_WITHER_HURT, 1f, 1f);
 			player.setVelocity(player.getLocation().getDirection().multiply(Integer.parseInt(args[0])).setY(2));
-			
+
 			return true;
 		}
 		return false;
