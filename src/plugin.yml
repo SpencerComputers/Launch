@@ -1,0 +1,8 @@
+main: com.HomeSMP.Launch.Main
+name: Launch
+version: 1.0
+author: spencermacca
+
+commands:
+  Launch:
+    aliases: lch
