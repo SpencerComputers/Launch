@@ -22,7 +22,7 @@ public class Main extends JavaPlugin {
 		// plugin reloads
 	}
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (label.equalsIgnoreCase("launch") || label.equalsIgnoreCase("lch")) {
+		if (label.equalsIgnoreCase("launch") || label.equalsIgnoreCase("up") || label.equalsIgnoreCase("whee")){
 			if (!(sender instanceof Player)) {
 				sender.sendMessage("This command must be executed by a player!");
 				return true;
