@@ -5,4 +5,5 @@ author: spencermacca
 
 commands:
   Launch:
-    aliases: lch
+    aliases: lch, whee, up, 
+    
